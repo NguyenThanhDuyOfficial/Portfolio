@@ -5,7 +5,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiGmail, SiGithub } from "react-icons/si";
 import { GoArrowUpRight } from "react-icons/go";
 import ProductCard, { Product } from "../components/ProductCard";
-import { Separator } from "@nguyenthanhduyofficial/ui/components/separator";
 import { Badge } from "@nguyenthanhduyofficial/ui/components/badge";
 
 const products: Product[] = [
@@ -109,9 +108,17 @@ export default function Home() {
               <h2>Fullstack Developer</h2>
               <p>Turning problems into software.</p>
             </div>
-            <Button size="lg" className="px-4 rounded-xl shadow-xl">
-              Let's collaborate <GoArrowUpRight />
-            </Button>
+            <Button
+              size="lg"
+              className="px-4 rounded-xl shadow-xl"
+              nativeButton={false}
+              render={
+                <Link href="/contact">
+                  {" "}
+                  Let's collaborate <GoArrowUpRight />
+                </Link>
+              }
+            />
           </div>
           <div className="flex lg:flex-col gap-4">
             <Button
@@ -237,7 +244,7 @@ export default function Home() {
               nativeButton={false}
               className="mt-4 px-4 py-4 rounded-2xl shadow-2xl"
               render={
-                <Link href="#contact">
+                <Link href="/contact">
                   Contact Me <GoArrowUpRight />
                 </Link>
               }

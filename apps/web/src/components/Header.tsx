@@ -31,7 +31,7 @@ export default function Header() {
             <Link href="#service">{t("service")}</Link>
             <Button
               nativeButton={false}
-              render={<Link href="#contact">{t("let'sTalk")}</Link>}
+              render={<Link href="/contact">{t("let'sTalk")}</Link>}
             />
           </div>
         )}
@@ -47,7 +47,7 @@ export default function Header() {
       <Button
         nativeButton={false}
         className="hidden lg:flex"
-        render={<Link href="#contact">{t("let'sTalk")}</Link>}
+        render={<Link href="/contact">{t("let'sTalk")}</Link>}
       />
     </header>
   );

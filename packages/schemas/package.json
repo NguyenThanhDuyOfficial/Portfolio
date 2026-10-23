@@ -1,30 +1,4 @@
 {
-  "//": [
-    "This config is based on https://docs.npmjs.com/cli/v10/configuring-npm/package-json?v=true#man",
-    "Below is the list of unused configuration options:",
-    [
-      "contributors",
-      "funding",
-      "files",
-      "browser",
-      "bin",
-      "man",
-      "directories",
-      "config",
-      "peerDependencies",
-      "peerDependenciesMeta",
-      "bundleDependencies",
-      "optionalDependencies",
-      "overrides",
-      "os",
-      "cpu",
-      "devEngines",
-      "publishConfig",
-      "workspaces"
-    ],
-    "Make changes as needed to suit your requirements.",
-    "Wishing you diligence, wisdom, and happiness."
-  ],
   "name": "@nguyenthanhduyofficial/schemas",
   "version": "0.1.0",
   "description": "Shared schemas, type definitions, interfaces, and enums for nguyenthanhduyofficial's projects",
