@@ -2,60 +2,11 @@ import { Button } from "@nguyenthanhduyofficial/ui/components/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
-import { SiGmail, SiGithub } from "react-icons/si";
 import { GoArrowUpRight } from "react-icons/go";
-import ProductCard, { Product } from "../components/ProductCard";
-import { Badge } from "@nguyenthanhduyofficial/ui/components/badge";
-
-const products: Product[] = [
-  {
-    slug: "joli",
-    title: "Joli - Home Fragrance & Personal Care",
-    description: "",
-    price: "3tr",
-    demoUrl: "",
-    githubUrl: "",
-    timeline: "01/2024 - 03/2024",
-    tags: ["Ecommerce"],
-    techs: ["Next.js", "TailwindCSS"],
-    images: ["/products/joli.png"],
-  },
-  {
-    slug: "car",
-    title: "Car - Car Rental Platform",
-    description: "",
-    price: "7tr",
-    demoUrl: "",
-    githubUrl: "",
-    timeline: "01/2024 - 03/2024",
-    tags: ["Booking"],
-    techs: ["Next.js", "TailwindCSS"],
-    images: ["/products/car.png"],
-  },
-  {
-    slug: "dotfile",
-    title: "Dotfile - Arch/Hypr Linux Custom Desktop Environment",
-    description: "",
-    tags: ["Dotfile"],
-    demoUrl: "",
-    githubUrl: "",
-    timeline: "01/2024 - 03/2024",
-    techs: ["Next.js", "TailwindCSS"],
-    images: ["/products/dotfile.png"],
-  },
-  {
-    slug: "odyssey",
-    title: "Odyssey - Learn Community Website",
-    description: "",
-    price: "3tr",
-    demoUrl: "",
-    githubUrl: "",
-    timeline: "01/2024 - 03/2024",
-    tags: ["Blog", "Landing Page"],
-    techs: ["Next.js", "TailwindCSS"],
-    images: ["/products/odyssey.png"],
-  },
-];
+import ProductCard from "../components/ProductCard";
+import { SiGmail, SiGithub } from "react-icons/si";
+import { products } from "../data/products";
+import ContactSection from "../components/ContactSection";
 
 const services = [
   {
@@ -215,76 +166,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        id="contact"
-        className="relative w-full min-h-screen flex items-center justify-center"
-      >
-        <Image
-          src="/cloud.jpg"
-          alt="background"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="relative max-w-7xl mx-auto h-full backdrop-blur-2xl px-4 py-16 lg:px-16 rounded-2xl flex flex-col gap-16 items-center justify-center">
-          <Badge variant="secondary" className="drop-shadow-lg">
-            <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full" />{" "}
-            Available for New Project
-          </Badge>
-          <div className="px-4 flex flex-col items-center gap-4 text-center">
-            <p className="text-2xl lg:text-6xl font-bold lg:font-medium">
-              HAVE A PROJECT IN MIND?
-            </p>
-            <p className="max-w-150">
-              Together, we can create something clear and impactful. Let's
-              collaborate to bring our ideas to life in a way that reasonates
-              with everyone.
-            </p>
-            <Button
-              nativeButton={false}
-              className="mt-4 px-4 py-4 rounded-2xl shadow-2xl"
-              render={
-                <Link href="/contact">
-                  Contact Me <GoArrowUpRight />
-                </Link>
-              }
-            />
-          </div>
-
-          <div className="flex gap-4 lg:gap-16">
-            <Button
-              variant="outline"
-              size="lg"
-              nativeButton={false}
-              render={
-                <Link href="">
-                  <SiGithub /> Github
-                </Link>
-              }
-            ></Button>
-            <Button
-              variant="outline"
-              size="lg"
-              nativeButton={false}
-              render={
-                <Link href="">
-                  <FaLinkedin /> LinkedIn
-                </Link>
-              }
-            ></Button>
-            <Button
-              variant="outline"
-              size="lg"
-              nativeButton={false}
-              render={
-                <Link href="">
-                  <SiGmail /> Gmail
-                </Link>
-              }
-            ></Button>
-          </div>
-        </div>
-      </section>
+      <ContactSection />
     </main>
   );
 }

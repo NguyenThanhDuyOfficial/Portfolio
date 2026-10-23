@@ -1,25 +1,20 @@
 import { Badge } from "@nguyenthanhduyofficial/ui/components/badge";
 import Image from "next/image";
 import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 import { IoIosPricetags } from "react-icons/io";
+import { Product } from "../data/products";
 
-export interface Product {
-  slug: string;
-  title: string;
-  description?: string;
-  price?: string;
-  demoUrl?: string;
-  githubUrl?: string;
-  timeline?: string;
-  tags?: string[];
-  techs: string[];
-  images: string[];
-}
-
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({
+  product,
+  className = "",
+}: {
+  product: Product;
+  className?: string;
+}) {
   return (
-    <div className="max-w-120 shadow-2xl rounded-xl">
-      <div className="relative w-full aspect-video">
+    <div className={`max-w-120 shadow-2xl rounded-xl ${className}`}>
+      <div className="relative w-full aspect-video group">
         <Link href={product.slug}>
           <Image
             src={product.images[0]!}
@@ -29,6 +24,11 @@ export default function ProductCard({ product }: { product: Product }) {
             className="object-cover"
           />
         </Link>
+        <div className="absolute inset-0 pointer-events-none bg-foreground/0 group-hover:bg-foreground/30 w-full h-full flex items-center justify-center transition-all duration-300">
+          <div className="hidden group-hover:flex w-12 h-12 rounded-full bg-background items-center justify-center transition-all duration-300">
+            <GoArrowUpRight size={24} />
+          </div>
+        </div>
         {product.tags && (
           <div className="absolute top-4 left-4 flex gap-2">
             {product.tags.map((tag, index) => (
