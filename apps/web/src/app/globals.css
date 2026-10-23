@@ -1,6 +1,11 @@
-@import 'tailwindcss';
-@import '@nguyenthanhduyofficial/ui/globals.css';
+@import "@nguyenthanhduyofficial/ui/globals.css";
 
+@theme inline {
+  --font-bungee: var(--font-bungee);
+  --font-bungee-outline: var(--font-bungee-outline);
+  --font-londrina-outline: var(--font-londrina-outline);
+  --font-londrina-solid: var(--font-londrina-solid);
+}
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -11,12 +16,10 @@
 }
 
 :root {
-  --background: #fcf9ee;
-  --foreground: #292929;
-  --card: #f7f4e9;
-  --card-foreground: #292929;
-  --button: #292929;
-  --button-foreground: #fcf9ee;
+  --background: #fcfcfc;
+  --foreground: #333333;
+  --card: #333333;
+  --card-foreground: #fcfcfc;
 }
 
 @layer base {
