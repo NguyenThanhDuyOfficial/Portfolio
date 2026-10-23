@@ -12,12 +12,12 @@ export default function Header() {
   const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="fixed inset-0 z-50 w-full max-w-7xl mx-auto h-16 px-4 md:mt-4 md:px-16 flex justify-between items-center bg-background md:rounded-2xl">
-      <Badge variant="outline" className="drop-shadow-lg">
+    <header className="fixed inset-0 z-50 w-full max-w-7xl mx-auto h-16 px-4 lg:mt-4 lg:px-16 flex justify-between items-center bg-background lg:rounded-2xl">
+      <Badge variant="secondary" className="drop-shadow">
         <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full" />{" "}
         {t("availableForNewProject")}
       </Badge>
-      <div className="relative md:hidden">
+      <div className="relative lg:hidden">
         <Button
           variant="outline"
           size="icon-lg"
@@ -38,15 +38,15 @@ export default function Header() {
       </div>
 
       {/* MD responsive */}
-      <Link href="#work" className="hidden md:block">
+      <Link href="#work" className="hidden lg:block">
         {t("work")}
       </Link>
-      <Link href="#service" className="hidden md:block">
+      <Link href="#service" className="hidden lg:block">
         {t("service")}
       </Link>
       <Button
         nativeButton={false}
-        className="hidden md:flex"
+        className="hidden lg:flex"
         render={<Link href="#contact">{t("let'sTalk")}</Link>}
       />
     </header>
