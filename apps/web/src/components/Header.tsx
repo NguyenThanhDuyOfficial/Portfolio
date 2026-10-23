@@ -12,7 +12,7 @@ export default function Header() {
   const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="fixed inset-0 z-50 w-full max-w-7xl h-16 px-4 md:px-16 flex justify-between items-center bg-background">
+    <header className="fixed inset-0 z-50 w-full max-w-7xl mx-auto h-16 px-4 md:mt-4 md:px-16 flex justify-between items-center bg-background md:rounded-2xl">
       <Badge variant="outline" className="drop-shadow-lg">
         <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full" />{" "}
         {t("availableForNewProject")}
