@@ -15,7 +15,7 @@ export default function ProductCard({
   return (
     <div className={`max-w-120 shadow-2xl rounded-xl ${className}`}>
       <div className="relative w-full aspect-video group">
-        <Link href={product.slug}>
+        <Link href={product.slug} className="absolute inset-0">
           <Image
             src={product.images[0]!}
             alt="Product's Image"

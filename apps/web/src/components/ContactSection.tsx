@@ -50,7 +50,7 @@ export default function ContactSection() {
             size="lg"
             nativeButton={false}
             render={
-              <Link href="">
+              <Link href="https://github.com/NguyenThanhDuyOfficial">
                 <SiGithub /> Github
               </Link>
             }
@@ -60,7 +60,7 @@ export default function ContactSection() {
             size="lg"
             nativeButton={false}
             render={
-              <Link href="">
+              <Link href="https://www.linkedin.com/in/nguyenthanhduyofficial/">
                 <FaLinkedin /> LinkedIn
               </Link>
             }
@@ -70,7 +70,7 @@ export default function ContactSection() {
             size="lg"
             nativeButton={false}
             render={
-              <Link href="">
+              <Link href="mailto:nguyenthanhduyofficial@gmail.com">
                 <SiGmail /> Gmail
               </Link>
             }

@@ -13,23 +13,23 @@ const services = [
     title: "Landing Page",
     description:
       "Design and Code modern, performance, SEO and responsive landing page.",
-    url: "",
+    url: "/service",
   },
   {
     title: "MVP Web/App",
     description:
       "Business Analysis, Design, Code MVP product that solves your problems.",
-    url: "",
+    url: "/service",
   },
   {
     title: "Fix / Update / Upgrade",
     description: "Fix bugs and upgrade your website to meet your needs.",
-    url: "",
+    url: "/service",
   },
   {
     title: "UI/UX Design & Implementation",
     description: "UI/UX Design on Penpot/Figma, or Design to code.",
-    url: "",
+    url: "/service",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function Home() {
               size="lg"
               nativeButton={false}
               render={
-                <Link href="">
+                <Link href="https://github.com/NguyenThanhDuyOfficial">
                   <SiGithub /> Github
                 </Link>
               }
@@ -87,7 +87,7 @@ export default function Home() {
               size="lg"
               nativeButton={false}
               render={
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/nguyenthanhduyofficial/">
                   <FaLinkedin /> LinkedIn
                 </Link>
               }
@@ -97,7 +97,7 @@ export default function Home() {
               size="lg"
               nativeButton={false}
               render={
-                <Link href="">
+                <Link href="mailto:nguyenthanhduyofficial@gmail.com">
                   <SiGmail /> Gmail
                 </Link>
               }

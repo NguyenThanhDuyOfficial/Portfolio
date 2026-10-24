@@ -9,33 +9,48 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function sendContactEmail(prevState: any, formData: FormData) {
   const parsed = contactSchema.safeParse({
     name: formData.get("name"),
-    email: formData.get("email") || undefined,
-    phone: formData.get("phone") || undefined,
+    contact: formData.get("contact"),
     message: formData.get("message"),
+    plan: formData.get("plan") || "custom",
   });
   if (!parsed.success) {
     return {
       success: false,
-      formErrors: z.treeifyError(parsed.error),
+      formErrors: z.flattenError(parsed.error),
+      values: {
+        name: formData.get("name") as string,
+        contact: formData.get("contact") as string,
+        message: formData.get("message") as string,
+      },
     };
   }
 
-  const { name, email, phone, message } = parsed.data;
-  const replyTo = email || undefined;
-  const contactLine = email ? `Email: ${email}` : `Phone: ${phone}`;
+  const { name, contact, message, plan } = parsed.data;
   try {
     await resend.emails.send({
       from: process.env.EMAIL_FROM!,
       to: process.env.EMAIL_TO!,
-      ...(replyTo && { replyTo }),
       subject: `New inquiry from ${name}`,
       html: `
-<p><strong>Name:</strong> ${name}</p>
-<p><strong>${contactLine}</strong></p><hr/> <p style="wiite-space:pre-wrap">${message}</p>`,
+        <h2>New inquiry — ${plan}</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Contact:</strong> ${contact}</p>
+        <p><strong>Plan:</strong> ${plan}</p>
+        <hr/>
+        <p style="white-space:pre-wrap">${message}</p>
+      `,
     });
     return { success: true };
   } catch (err) {
     console.log(err);
-    return { success: false, message: "Failed" };
+    return {
+      success: false,
+      message: "Failed",
+      values: {
+        name: formData.get("name") as string,
+        contact: formData.get("contact") as string,
+        message: formData.get("message") as string,
+      },
+    };
   }
 }
