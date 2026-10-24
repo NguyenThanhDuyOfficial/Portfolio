@@ -80,5 +80,108 @@
       "landingPage": "Landing Page",
       "dotfile": "Dotfile"
     }
+  },
+  "Service": {
+    "included": "INCLUDED",
+    "getStarted": "Get Started",
+    "notIncluded": "NOT INCLUDED",
+    "deliverables": "DELIVERABLES",
+    "landing": {
+      "tag": "Starter",
+      "title": "Landing Page",
+      "description": "Best for small businesses, product launches, or campaigns needing a focused single-page site that converts visitors.",
+      "priceNote": "50/50 payment split available",
+      "time": "2-7 days",
+      "included": {
+        "page": "1 page, up to 4-6 sections",
+        "responsive": "Responsive Mobile/Tablet/Desktop",
+        "form": "Basic contact form with validation",
+        "seo": "Basic SEO (meta, OG tags, sitemap)",
+        "analytics": "Basic Analytics (GA4)",
+        "revision": "1 revision round",
+        "deploy": "Deploy to Vercel",
+        "warranty": "7-day bug warranty"
+      },
+      "notIncluded": {
+        "design": "Design from scratch (custom Figma UI)",
+        "copywriting": "Copywriting",
+        "animation": "Complex animation",
+        "integrations": "CRM/Payment integrations, backend, complex API",
+        "hosting": "Hosting/Domain fees",
+        "ads": "A/B Testing & Ads",
+        "extraRevisions": "Extra revision rounds",
+        "externalCode": "Fixing bugs in code outside the deliverables (existing/legacy code, third-party code)"
+      },
+      "deliverables": {
+        "website": "Finished landing website",
+        "seo": "SEO basic implemented",
+        "sourceCode": "Source code handover"
+      }
+    },
+    "mvp": {
+      "tag": "Standard",
+      "title": "MVP Web",
+      "description": "Best for founders validating an idea — a working web app with one core flow, auth, and a simple database, ready to test with real users.",
+      "priceNote": "40/30/30 payment split available",
+      "time": "6-8 weeks",
+      "included": {
+        "flow": "1 main user flow",
+        "features": "3-5 main features (locked in writing before start)",
+        "responsive": "Responsive Mobile/Tablet/Desktop",
+        "auth": "Basic auth (sign up / sign in, 1 role)",
+        "database": "Basic Database (Postgres/Prisma/Supabase) - CRUD",
+        "deploy": "Deploy to production + documentation",
+        "demo": "Weekly demo",
+        "revisions": "2 revision rounds",
+        "warranty": "2-week bug warranty"
+      },
+      "notIncluded": {
+        "mobileApp": "Mobile app (iOS / Android)",
+        "payment": "Complex payment gateway (Stripe / VNPay)",
+        "admin": "Full admin dashboard / multi-role permissions",
+        "realtime": "Real-time features, chat, complex notifications",
+        "thirdParty": "Third-party integrations (ERP / CRM / AI)",
+        "openScope": "Open scope — anything outside the locked feature list",
+        "maintenance": "Maintenance after 2-week warranty",
+        "sla": "SLA / 24-7 support",
+        "externalCode": "Fixing bugs in code outside the deliverables (existing/legacy code, third-party code)"
+      },
+      "deliverables": {
+        "deployed": "Deployed web app (production URL)",
+        "sourceCode": "Source code handover",
+        "docs": "Setup & deploy documentation",
+        "walkthrough": "Basic handover walkthrough"
+      }
+    },
+    "custom": {
+      "tag": "Custom",
+      "title": "Custom Web App",
+      "description": "For anything from a quick bug fix to a large-scale build — scope is agreed in writing first, then priced as a fixed quote.",
+      "priceNote": "Quoted by scope",
+      "time": "2 hours - 3+ months",
+      "included": {
+        "brief": "Brief + scope → fixed price quote",
+        "scopeLock": "Written scope lock before start",
+        "progress": "Progress updates (weekly demo for ≥ 2-week projects)",
+        "sourceCode": "Source code handover + deploy guide",
+        "warranty": "Bug warranty 48h - 4 weeks",
+        "support": "Chat / email support during business hours"
+      },
+      "notIncluded": {
+        "outsideScope": "Anything outside the agreed scope (re-quoted via addendum)",
+        "hosting": "Hosting / domain / third-party accounts",
+        "content": "Content, images, copywriting",
+        "mobileApp": "Mobile app native",
+        "compliance": "Compliance (SOC 2, HIPAA, PCI-DSS)",
+        "sla": "SLA uptime / 24-7 support",
+        "enterprise": "Enterprise full-stack (subcontract frontend only)",
+        "externalCode": "Fixing bugs in code outside the deliverables (existing/legacy code, third-party code)"
+      },
+      "deliverables": {
+        "defined": "Deliverables defined per project in the scope document",
+        "sourceCode": "Source code + deploy instructions",
+        "walkthrough": "Final walkthrough & handover"
+      }
+    }
   }
 }

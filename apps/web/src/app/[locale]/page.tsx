@@ -35,6 +35,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <div className="px-8 lg:pl-20 lg:pt-8 lg:pr-40 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">

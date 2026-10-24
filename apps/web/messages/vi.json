@@ -1,17 +1,187 @@
 {
   "Header": {
-    "availableForNewProject": "Available for New Project",
-    "work": "Work",
-    "service": "Service",
-    "let'sTalk": "Let's Talk"
+    "availableForNewProject": "Sẵn sàng nhận dự án mới",
+    "work": "Dự án",
+    "service": "Dịch vụ",
+    "let'sTalk": "Liên hệ"
   },
+  "Home": {
+    "role": "Fullstack Developer",
+    "description": "Biến vấn đề thành phần mềm.",
+    "let'sCollaborate": "Hợp tác nào",
+    "selectedWork": "DỰ ÁN",
+    "completedProjects": "Dự án đã hoàn thành",
+    "viewAllWork": "Xem tất cả dự án",
+    "service": "DỊCH VỤ",
+    "landing": {
+      "title": "Landing Page",
+      "description": "Thiết kế và lập trình landing page hiện đại, tốc độ cao, thân thiện SEO và responsive."
+    },
+    "mvp": {
+      "title": "MVP Web/App",
+      "description": "Phân tích nghiệp vụ, thiết kế và lập trình sản phẩm MVP giải quyết vấn đề của bạn."
+    },
+    "fixUpgrade": {
+      "title": "Sửa lỗi / Cập nhật / Nâng cấp",
+      "description": "Sửa lỗi và nâng cấp website đáp ứng nhu cầu của bạn."
+    },
+    "design": {
+      "title": "Thiết kế & Triển khai UI/UX",
+      "description": "Thiết kế UI/UX trên Penpot/Figma, hoặc chuyển thiết kế thành code."
+    }
+  },
+
   "Contact": {
-    "NAME_MIN": "Name must be at least 2 characters.",
-    "NAME_MAX": "Name must be at most 100 characters.",
-    "CONTACT_MIN": "Please enter at least 5 characters.",
-    "CONTACT_MAX": "Contact info must be at most 100 characters.",
-    "CONTACT_INVALID": "Please enter a valid email, phone number, or link.",
-    "MESSAGE_MIN": "Message must be at least 10 characters.",
-    "MESSAGE_MAX": "Message must be at most 5000 characters."
+    "name": "Họ tên",
+    "namePlaceholder": "Tên của bạn",
+    "contactInfo": "Thông tin liên hệ",
+    "contactInfoPlaceholder": "Email, số điện thoại hoặc link",
+    "message": "Nội dung",
+    "messagePlaceholder": "Mô tả về dự án của bạn....",
+    "sendMessage": "Gửi tin nhắn",
+    "sending": "Đang gửi",
+    "NAME_MIN": "Họ tên phải có ít nhất 2 ký tự.",
+    "NAME_MAX": "Họ tên không được vượt quá 100 ký tự.",
+    "CONTACT_MIN": "Vui lòng nhập ít nhất 5 ký tự.",
+    "CONTACT_MAX": "Thông tin liên hệ không được vượt quá 100 ký tự.",
+    "CONTACT_INVALID": "Vui lòng nhập email, số điện thoại hoặc link hợp lệ.",
+    "MESSAGE_MIN": "Nội dung phải có ít nhất 10 ký tự.",
+    "MESSAGE_MAX": "Nội dung không được vượt quá 5000 ký tự."
+  },
+
+  "Product": {
+    "livePreview": "Xem trực tiếp",
+    "contactMe": "Liên hệ",
+    "github": "GitHub",
+    "price": "Giá",
+    "timeline": "Thời gian",
+    "free": "MIỄN PHÍ",
+    "moreProduct": "DỰ ÁN KHÁC",
+    "joli": {
+      "title": "Joli - Nước hoa phòng & Chăm sóc cá nhân",
+      "description": "Joli là nền tảng thương mại điện tử chuyên về nước hoa phòng và sản phẩm chăm sóc cá nhân."
+    },
+    "car": {
+      "title": "Car - Nền tảng cho thuê xe",
+      "description": "Car là nền tảng đặt thuê xe với tính năng quản lý phương tiện và đặt xe trực tuyến."
+    },
+    "odyssey": {
+      "title": "Odyssey - Website cộng đồng học tập",
+      "description": "Odyssey là website cộng đồng học tập bao gồm blog và các trang landing."
+    },
+    "dotfile": {
+      "title": "Dotfile - Môi trường desktop tùy biến Arch/Hypr Linux",
+      "description": "Bộ dotfiles Arch Linux + Hyprland cá nhân của tôi cho môi trường desktop tùy biến."
+    },
+    "tags": {
+      "ecommerce": "Thương mại điện tử",
+      "booking": "Đặt chỗ",
+      "blog": "Blog",
+      "landingPage": "Landing Page",
+      "dotfile": "Dotfile"
+    }
+  },
+  "Service": {
+    "included": "BAO GỒM",
+    "getStarted": "Bắt đầu",
+    "notIncluded": "KHÔNG BAO GỒM",
+    "deliverables": "BÀN GIAO",
+    "landing": {
+      "tag": "Khởi đầu",
+      "title": "Landing Page",
+      "description": "Phù hợp cho doanh nghiệp nhỏ, ra mắt sản phẩm hoặc chiến dịch cần một trang đơn tập trung giúp chuyển đổi khách truy cập.",
+      "priceNote": "Có thể chia thanh toán 50/50",
+      "time": "2-7 ngày",
+      "included": {
+        "page": "1 trang, tối đa 4-6 section",
+        "responsive": "Responsive Mobile/Tablet/Desktop",
+        "form": "Form liên hệ cơ bản có validation",
+        "seo": "SEO cơ bản (meta, OG tags, sitemap)",
+        "analytics": "Analytics cơ bản (GA4)",
+        "revision": "1 vòng chỉnh sửa",
+        "deploy": "Deploy lên Vercel",
+        "warranty": "Bảo hành bug 7 ngày"
+      },
+      "notIncluded": {
+        "design": "Thiết kế từ đầu (Figma UI tùy chỉnh)",
+        "copywriting": "Viết nội dung",
+        "animation": "Animation phức tạp",
+        "integrations": "Tích hợp CRM/Thanh toán, backend, API phức tạp",
+        "hosting": "Phí Hosting/Domain",
+        "ads": "A/B Testing & Quảng cáo",
+        "extraRevisions": "Vòng chỉnh sửa thêm",
+        "externalCode": "Sửa bug trong code ngoài phạm vi bàn giao (code cũ/hiện có, code bên thứ ba)"
+      },
+      "deliverables": {
+        "website": "Website landing hoàn chỉnh",
+        "seo": "SEO cơ bản đã triển khai",
+        "sourceCode": "Bàn giao source code"
+      }
+    },
+    "mvp": {
+      "tag": "Tiêu chuẩn",
+      "title": "MVP Web",
+      "description": "Phù hợp cho founder đang kiểm chứng ý tưởng — một web app hoạt động được với một luồng chính, xác thực và database đơn giản, sẵn sàng để thử nghiệm với người dùng thật.",
+      "priceNote": "Có thể chia thanh toán 40/30/30",
+      "time": "6-8 tuần",
+      "included": {
+        "flow": "1 luồng người dùng chính",
+        "features": "3-5 tính năng chính (chốt bằng văn bản trước khi bắt đầu)",
+        "responsive": "Responsive Mobile/Tablet/Desktop",
+        "auth": "Xác thực cơ bản (đăng ký / đăng nhập, 1 role)",
+        "database": "Database cơ bản (Postgres/Prisma/Supabase) - CRUD",
+        "deploy": "Deploy lên production + tài liệu",
+        "demo": "Demo hàng tuần",
+        "revisions": "2 vòng chỉnh sửa",
+        "warranty": "Bảo hành bug 2 tuần"
+      },
+      "notIncluded": {
+        "mobileApp": "Mobile app (iOS / Android)",
+        "payment": "Cổng thanh toán phức tạp (Stripe / VNPay)",
+        "admin": "Admin dashboard đầy đủ / phân quyền đa role",
+        "realtime": "Tính năng real-time, chat, thông báo phức tạp",
+        "thirdParty": "Tích hợp bên thứ ba (ERP / CRM / AI)",
+        "openScope": "Scope mở — mọi thứ ngoài danh sách tính năng đã chốt",
+        "maintenance": "Bảo trì sau thời gian bảo hành 2 tuần",
+        "sla": "SLA / hỗ trợ 24-7",
+        "externalCode": "Sửa bug trong code ngoài phạm vi bàn giao (code cũ/hiện có, code bên thứ ba)"
+      },
+      "deliverables": {
+        "deployed": "Web app đã deploy (URL production)",
+        "sourceCode": "Bàn giao source code",
+        "docs": "Tài liệu setup & deploy",
+        "walkthrough": "Hướng dẫn bàn giao cơ bản"
+      }
+    },
+    "custom": {
+      "tag": "Tùy chỉnh",
+      "title": "Custom Web App",
+      "description": "Dành cho mọi nhu cầu từ sửa bug nhanh đến xây dựng quy mô lớn — phạm vi được thống nhất bằng văn bản trước, sau đó báo giá cố định.",
+      "priceNote": "Báo giá theo phạm vi",
+      "time": "2 giờ - 3+ tháng",
+      "included": {
+        "brief": "Brief + phạm vi → báo giá cố định",
+        "scopeLock": "Chốt phạm vi bằng văn bản trước khi bắt đầu",
+        "progress": "Cập nhật tiến độ (demo hàng tuần với dự án ≥ 2 tuần)",
+        "sourceCode": "Bàn giao source code + hướng dẫn deploy",
+        "warranty": "Bảo hành bug 48h - 4 tuần",
+        "support": "Hỗ trợ chat / email trong giờ hành chính"
+      },
+      "notIncluded": {
+        "outsideScope": "Mọi thứ ngoài phạm vi đã thống nhất (báo giá lại qua phụ lục)",
+        "hosting": "Hosting / domain / tài khoản bên thứ ba",
+        "content": "Nội dung, hình ảnh, viết content",
+        "mobileApp": "Mobile app native",
+        "compliance": "Tuân thủ (SOC 2, HIPAA, PCI-DSS)",
+        "sla": "SLA uptime / hỗ trợ 24-7",
+        "enterprise": "Enterprise full-stack (chỉ nhận subcontract frontend)",
+        "externalCode": "Sửa bug trong code ngoài phạm vi bàn giao (code cũ/hiện có, code bên thứ ba)"
+      },
+      "deliverables": {
+        "defined": "Sản phẩm bàn giao được định nghĩa theo từng dự án trong tài liệu phạm vi",
+        "sourceCode": "Source code + hướng dẫn deploy",
+        "walkthrough": "Buổi bàn giao & hướng dẫn cuối"
+      }
+    }
   }
 }
