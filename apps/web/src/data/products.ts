@@ -34,8 +34,6 @@ import { LuListChecks, LuBox } from "react-icons/lu";
 
 export interface Product {
   slug: string;
-  title: string;
-  description?: string;
   price?: string;
   demoUrl?: string;
   githubUrl?: string;
@@ -48,14 +46,11 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: "joli",
-    title: "Joli - Home Fragrance and Personal Care",
-    description:
-      "Joli is an e-commerce platform dedicated to home fragrance and personal care.",
     price: "3tr",
     demoUrl: "joli-nguyenthanhhduyofficial.vercel.app",
     githubUrl: "https://github.com/NguyenThanhDuyOfficial/Joli",
     timeline: "01/2024 - 03/2024",
-    tags: ["Ecommerce"],
+    tags: ["ecommerce"],
     techs: [
       {
         title: "GitHub",
@@ -198,13 +193,11 @@ export const products: Product[] = [
   },
   {
     slug: "car",
-    title: "Car - Car Rental Platform",
-    description: "",
     price: "7tr",
     demoUrl: "",
     githubUrl: "",
     timeline: "01/2024 - 03/2024",
-    tags: ["Booking"],
+    tags: ["booking"],
     techs: [
       {
         title: "Next.js",
@@ -283,13 +276,11 @@ export const products: Product[] = [
   },
   {
     slug: "odyssey",
-    title: "Odyssey - Learn Community Website",
-    description: "",
     price: "3tr",
     demoUrl: "",
     githubUrl: "",
     timeline: "01/2024 - 03/2024",
-    tags: ["Blog", "Landing Page"],
+    tags: ["blog", "landingPage"],
     techs: [
       {
         title: "GitHub",
@@ -416,9 +407,7 @@ export const products: Product[] = [
   },
   {
     slug: "dotfile",
-    title: "Dotfile - Arch/Hypr Linux Custom Desktop Environment",
-    description: "",
-    tags: ["Dotfile"],
+    tags: ["dotfile"],
     demoUrl: "",
     githubUrl: "",
     timeline: "01/2024 - 03/2024",

@@ -2,7 +2,6 @@ import ContactSection from "@/src/components/ContactSection";
 import { Button } from "@nguyenthanhduyofficial/ui/components/button";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardHeader,
@@ -12,9 +11,11 @@ import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 
 export type PricingPlan = {
+  tag: string;
   title: string;
   description: string;
   price: string;
+
   url: string;
   keyFeatures: string[];
   time: string;
@@ -22,27 +23,40 @@ export type PricingPlan = {
   highlighted?: boolean;
 };
 
-export const pricings: PricingPlan[] = [
+export const pricings = [
   {
-    title: "Landing Page",
+    tag: "One-Day",
+    title: "Website Tune-Up",
     description:
-      "Best for individuals, freelancers, or small shops needing a single page to launch a product or capture leads.",
-    price: "2,500,000₫",
-    url: "/contact?plan=landing",
-    keyFeatures: [
-      "One-page site, up to 6 sections",
-      "Fully responsive (mobile / tablet / desktop)",
-      "Contact form (email or Google Sheets)",
-      "CTA buttons + social links (Zalo / Messenger)",
-      "Basic SEO (title, meta, alt, Open Graph)",
-      "Basic performance optimization + deploy (Vercel / Netlify)",
-      "2 revision rounds + source code handoff",
+      "Fix small website issues and updates done – fast, clean, and within a fixed scope.",
+    price: "$99",
+    priceNote: "fixed price (up to 8 hours of work)",
+    time: "1 business day from kickoff",
+    url: "/contact?plan=tune-up",
+    inlcuded: [
+      "Review the existing website and requested changes",
+      "Handle small updates, fixes, or improvements within scope",
+      "Update content, layout, styling, forms",
+      "Fix minor frontend or issues where feasible",
+      "Fix deployment issues on Vercel or similar platforms",
+      "Confirm completed work and flag out-of-scope items",
+      "Provide next-step recommendations if additional work is needed",
     ],
-    time: "5–7 days",
-    warranty: "30-day bug fix",
+    notIncluded: [
+      "Full redesign or rebranding",
+      "Building new pages from scratch beyond minor additions",
+      "Major architecture changes, migrations, or platform rebuilds",
+      "Ongoing support after delivery",
+    ],
+    deliverables: [
+      "Completed updates or fixes within scope",
+      "Short summary of what was done",
+      "Next-step recommendation (if broader work is needed)",
+    ],
   },
   {
-    title: "Small Business Website",
+    tag: "Standard",
+    title: "Small Web",
     description:
       "Best for small businesses, studios, or service providers needing a multi-page site they can update themselves.",
     price: "6,000,000₫",

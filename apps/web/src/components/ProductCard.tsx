@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoIosPricetags } from "react-icons/io";
 import { Product } from "../data/products";
+import { useTranslations } from "next-intl";
 
 export default function ProductCard({
   product,
@@ -12,6 +13,7 @@ export default function ProductCard({
   product: Product;
   className?: string;
 }) {
+  const t = useTranslations("Product");
   return (
     <div className={`max-w-120 shadow-2xl rounded-xl ${className}`}>
       <div className="relative w-full aspect-video group">
@@ -37,7 +39,7 @@ export default function ProductCard({
                 variant="secondary"
                 className="md:p-4 md:text-lg"
               >
-                {tag}
+                {t(`tags.${tag}`)}
               </Badge>
             ))}
           </div>
@@ -53,7 +55,9 @@ export default function ProductCard({
         )}
       </div>
       <div className="p-4">
-        <h4 className="line-clamp-2 md:text-2xl">{product.title}</h4>
+        <h4 className="line-clamp-2 md:text-2xl">
+          {t(`${product.slug}.title`)}
+        </h4>
       </div>
     </div>
   );

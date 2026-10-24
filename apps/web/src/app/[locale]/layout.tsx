@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import {
   geistMono,
   geistSans,
   londrinaOutline,
   londrinaSolid,
-} from "../fonts/fonts";
+} from "../../fonts/fonts";
 
 export const metadata: Metadata = {
   title: "nguyenthanhduyofficial",

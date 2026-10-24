@@ -3,37 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../../components/ProductCard";
 import { SiGmail, SiGithub } from "react-icons/si";
-import { products } from "../data/products";
-import ContactSection from "../components/ContactSection";
+import { products } from "../../data/products";
+import ContactSection from "../../components/ContactSection";
+import { useTranslations } from "next-intl";
 
-const services = [
-  {
-    title: "Landing Page",
-    description:
-      "Design and Code modern, performance, SEO and responsive landing page.",
-    url: "/service",
-  },
-  {
-    title: "MVP Web/App",
-    description:
-      "Business Analysis, Design, Code MVP product that solves your problems.",
-    url: "/service",
-  },
-  {
-    title: "Fix / Update / Upgrade",
-    description: "Fix bugs and upgrade your website to meet your needs.",
-    url: "/service",
-  },
-  {
-    title: "UI/UX Design & Implementation",
-    description: "UI/UX Design on Penpot/Figma, or Design to code.",
-    url: "/service",
-  },
+export const services = [
+  { key: "landing", url: "/service" },
+  { key: "mvp", url: "/service" },
+  { key: "fixUpgrade", url: "/service" },
+  { key: "design", url: "/service" },
 ];
 
 export default function Home() {
+  const t = useTranslations("Home");
   return (
     <main className="w-full">
       <section
@@ -56,8 +40,8 @@ export default function Home() {
         <div className="px-8 lg:pl-20 lg:pt-8 lg:pr-40 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
           <div className="flex flex-col items-center gap-4 text-center lg:items-start lg:text-start">
             <div>
-              <h2>Fullstack Developer</h2>
-              <p>Turning problems into software.</p>
+              <h2>{t("role")}</h2>
+              <p>{t("description")}</p>
             </div>
             <Button
               size="lg"
@@ -66,7 +50,7 @@ export default function Home() {
               render={
                 <Link href="/contact">
                   {" "}
-                  Let's collaborate <GoArrowUpRight />
+                  {t("let'sCollaborate")} <GoArrowUpRight />
                 </Link>
               }
             />
@@ -108,18 +92,20 @@ export default function Home() {
       <section id="work" className="px-4 py-16 lg:px-16 max-w-7xl mx-auto">
         <div className="relative pb-8 flex flex-col items-center">
           <p className="text-4xl lg:text-[100px] text-foreground/10">
-            SELECTED WORK
+            {t("selectedWork")}
           </p>
           <div className="absolute top-4 lg:bottom-8 left-0 w-full flex justify-between items-end">
-            <p className="text-xl lg:text-5xl font-medium">/SELECTED WORK</p>
-            <p className="lg:text-2xl">4+ complete projects</p>
+            <p className="text-xl lg:text-5xl font-medium">
+              /{t("selectedWork")}
+            </p>
+            <p className="lg:text-2xl">4+ {t("completedProjects")}</p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-8">
           <div className="w-full flex justify-between">
             <Button variant="ghost">All</Button>
             <Button variant="outline">
-              View All Work <GoArrowUpRight />
+              {t("viewAllWork")} <GoArrowUpRight />
             </Button>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 gap-x-24">
@@ -143,10 +129,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 py-20 lg:px-16">
           <div className="relative pb-8 flex flex-col items-center">
             <p className="text-4xl lg:text-[100px] text-foreground/20">
-              SERVICE
+              {t("service")}
             </p>
             <div className="absolute top-4 lg:bottom-8 left-0 w-full flex justify-between items-end">
-              <p className="text-xl lg:text-5xl font-medium">/SERVICE</p>
+              <p className="text-xl lg:text-5xl font-medium">/{t("service")}</p>
             </div>
           </div>
           <div className="relative flex flex-col border-y border-foreground/50 divide-y divide-foreground/50">
@@ -155,9 +141,9 @@ export default function Home() {
                 <div className="px-4 py-8 flex justify-between items-center gap-8 hover:bg-card hover:text-card-foreground rounded-sm hover:shadow-2xl">
                   <div>
                     <p className="text-lg lg:text-3xl font-medium">
-                      {service.title}
+                      {t(`${service.key}.title`)}
                     </p>
-                    <p>{service.description}</p>
+                    <p>{t(`${service.key}.description`)}</p>
                   </div>
                   <GoArrowUpRight className="w-8 lg:w-12 h-8 lg:h-12 shrink-0" />
                 </div>

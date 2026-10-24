@@ -15,8 +15,10 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import ProductCard from "@/src/components/ProductCard";
 import ContactSection from "@/src/components/ContactSection";
+import { useTranslations } from "next-intl";
 
 export default function Product() {
+  const t = useTranslations("Product");
   const params = useParams<{ slug: string }>();
   const slug = params.slug;
   const product = products.find((i) => i.slug === slug);
@@ -29,13 +31,13 @@ export default function Product() {
             {product?.tags &&
               product.tags.map((tag) => (
                 <Badge variant="secondary" key={tag}>
-                  {tag}
+                  {t(`tags.${tag}`)}
                 </Badge>
               ))}
           </div>
-          <div className="space-y-2 max-w-[300px]">
-            <p className="text-4xl font-bold">{product?.title}</p>
-            <p>{product?.description}</p>
+          <div className="space-y-2 max-w-75">
+            <p className="text-4xl font-bold">{t(`${product?.slug}.title`)}</p>
+            <p>{t(`${product?.slug}.description`)}</p>
           </div>
           <div className="space-y-4">
             <div className="flex gap-4">
@@ -43,14 +45,14 @@ export default function Product() {
                 nativeButton={false}
                 render={
                   <Link href={product?.demoUrl ?? ""}>
-                    Live Preview <GoArrowUpRight />
+                    {t("livePreview")} <GoArrowUpRight />
                   </Link>
                 }
               />
               <Button
                 nativeButton={false}
                 variant="secondary"
-                render={<Link href="/contact">Contact Me</Link>}
+                render={<Link href="/contact">{t("contactMe")}</Link>}
               />
             </div>
             {product?.githubUrl && (
@@ -63,16 +65,18 @@ export default function Product() {
           </div>
         </div>
         <div className="flex flex-row justify-between lg:flex-col items-end gap-8">
-          <div className="flex flex-col lg:items-end gap-1">
-            <p className="text-foreground/80">Price</p>
-            <Badge className="lg:text-lg lg:p-4">
-              {product?.price ?? "FREE"}
-            </Badge>
-          </div>
-          <div className="text-right gap-4">
-            <p className="text-foreground/80">Timeline</p>
-            <p>{product?.timeline ?? "Unknown"}</p>
-          </div>
+          {product?.price && (
+            <div className="flex flex-col lg:items-end gap-1">
+              <p className="text-foreground/80">{t("price")}</p>
+              <Badge className="lg:text-lg lg:p-4">{product?.price}</Badge>
+            </div>
+          )}
+          {product?.timeline && (
+            <div className="text-right gap-4">
+              <p className="text-foreground/80">{t("timeline")}</p>
+              <p>{product?.timeline}</p>
+            </div>
+          )}
         </div>
       </div>
       <Carousel
@@ -120,10 +124,12 @@ export default function Product() {
       <div className="w-full max-w-5xl mx-auto px-4 py-8 lg:px-16">
         <div className="relative pb-8 flex flex-col items-center">
           <p className="text-4xl lg:text-[100px] text-foreground/20">
-            MORE PRODUCT
+            {t("moreProduct")}
           </p>
           <div className="absolute top-4 lg:bottom-8 left-0 w-full flex justify-between items-end">
-            <p className="text-xl lg:text-5xl font-medium">/MORE PRODUCT</p>
+            <p className="text-xl lg:text-5xl font-medium">
+              {t("moreProduct")}
+            </p>
           </div>
         </div>
         <Carousel

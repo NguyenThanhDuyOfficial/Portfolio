@@ -5,7 +5,41 @@
     "service": "Service",
     "let'sTalk": "Let's Talk"
   },
+  "Home": {
+    "role": "Fullstack Developer",
+    "description": "Turning problems into software.",
+    "let'sCollaborate": "Let's collaborate",
+    "selectedWork": "SELECTED WORK",
+    "completedProjects": "Completed Projects",
+    "viewAllWork": "View All Work",
+    "service": "SERVICE",
+    "landing": {
+      "title": "Landing Page",
+      "description": "Design and code modern, performant, SEO-friendly, responsive landing pages."
+    },
+    "mvp": {
+      "title": "MVP Web/App",
+      "description": "Business analysis, design, and code MVP products that solve your problems."
+    },
+    "fixUpgrade": {
+      "title": "Fix / Update / Upgrade",
+      "description": "Fix bugs and upgrade your website to meet your needs."
+    },
+    "design": {
+      "title": "UI/UX Design & Implementation",
+      "description": "UI/UX design in Penpot/Figma, or design-to-code."
+    }
+  },
+
   "Contact": {
+    "name": "Name",
+    "namePlaceholder": "Your Name",
+    "contactInfo": "Contact Info",
+    "contactInfoPlaceholder": "Email, phone or link",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project....",
+    "sendMessage": "Send Message",
+    "sending": "Sending",
     "NAME_MIN": "Name must be at least 2 characters.",
     "NAME_MAX": "Name must be at most 100 characters.",
     "CONTACT_MIN": "Please enter at least 5 characters.",
@@ -13,5 +47,38 @@
     "CONTACT_INVALID": "Please enter a valid email, phone number, or link.",
     "MESSAGE_MIN": "Message must be at least 10 characters.",
     "MESSAGE_MAX": "Message must be at most 5000 characters."
+  },
+
+  "Product": {
+    "livePreview": "Live Preview",
+    "contactMe": "Contact Me",
+    "github": "GitHub",
+    "price": "Price",
+    "timeline": "Timeline",
+    "free": "FREE",
+    "moreProduct": "MORE PRODUCT",
+    "joli": {
+      "title": "Joli - Home Fragrance and Personal Care",
+      "description": "Joli is an e-commerce platform dedicated to home fragrance and personal care."
+    },
+    "car": {
+      "title": "Car - Car Rental Platform",
+      "description": "Car is a car rental booking platform with vehicle management and online reservations."
+    },
+    "odyssey": {
+      "title": "Odyssey - Learn Community Website",
+      "description": "Odyssey is a learning community website featuring blog and landing pages."
+    },
+    "dotfile": {
+      "title": "Dotfile - Arch/Hypr Linux Custom Desktop Environment",
+      "description": "My personal Arch Linux + Hyprland dotfiles for a customized desktop environment."
+    },
+    "tags": {
+      "ecommerce": "Ecommerce",
+      "booking": "Booking",
+      "blog": "Blog",
+      "landingPage": "Landing Page",
+      "dotfile": "Dotfile"
+    }
   }
 }

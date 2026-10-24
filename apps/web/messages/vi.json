@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "availableForNewProject": "Available for New Project",
+    "work": "Work",
+    "service": "Service",
+    "let'sTalk": "Let's Talk"
+  },
+  "Contact": {
+    "NAME_MIN": "Name must be at least 2 characters.",
+    "NAME_MAX": "Name must be at most 100 characters.",
+    "CONTACT_MIN": "Please enter at least 5 characters.",
+    "CONTACT_MAX": "Contact info must be at most 100 characters.",
+    "CONTACT_INVALID": "Please enter a valid email, phone number, or link.",
+    "MESSAGE_MIN": "Message must be at least 10 characters.",
+    "MESSAGE_MAX": "Message must be at most 5000 characters."
+  }
+}

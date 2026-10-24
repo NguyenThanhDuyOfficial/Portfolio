@@ -34,11 +34,11 @@ export default function Contact() {
           <input type="hidden" name="plan" value={plan} />
           <FieldGroup>
             <Field>
-              <FieldLabel htmlFor="name">Name</FieldLabel>
+              <FieldLabel htmlFor="name">{t("name")}</FieldLabel>
               <Input
                 id="name"
                 name="name"
-                placeholder="Your name"
+                placeholder={t("namePlaceholder")}
                 required
                 defaultValue={state?.values?.name ?? ""}
               />
@@ -49,11 +49,11 @@ export default function Contact() {
               )}
             </Field>
             <Field>
-              <FieldLabel htmlFor="contact">Contact Info</FieldLabel>
+              <FieldLabel htmlFor="contact">{t("contactInfo")}</FieldLabel>
               <Input
                 id="contact"
                 name="contact"
-                placeholder="Phone, Email or Link"
+                placeholder={t("contactInfoPlaceholder")}
                 required
                 defaultValue={state?.values?.contact ?? ""}
               />
@@ -64,12 +64,12 @@ export default function Contact() {
               )}
             </Field>
             <Field>
-              <FieldLabel htmlFor="message">Message</FieldLabel>
+              <FieldLabel htmlFor="message">{t("message")}</FieldLabel>
               <Textarea
                 id="message"
                 name="message"
                 rows={5}
-                placeholder="Tell me about your project...."
+                placeholder={t("messagePlaceholder")}
                 required
                 defaultValue={state?.values?.message ?? ""}
               />
@@ -83,7 +83,7 @@ export default function Contact() {
               <FieldError>{state.message}</FieldError>
             )}
             <Button type="submit" disabled={isPending}>
-              {isPending ? "Sending..." : "Send message"}
+              {isPending ? t("sending") : t("sendMessage")}
             </Button>
           </FieldGroup>
         </form>
