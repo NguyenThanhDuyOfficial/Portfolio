@@ -10,7 +10,7 @@ import {
 } from "../../fonts/fonts";
 
 export const metadata: Metadata = {
-  title: "nguyenthanhduyofficial",
+  title: "Portfolio",
   description: "",
 };
 
