@@ -22,9 +22,9 @@ export default function Home() {
     <main className="w-full">
       <section
         id="hero"
-        className="relative h-screen max-h-200 flex flex-col justify-center gap-16 lg:gap-0 max-w-7xl mx-auto"
+        className="relative h-screen max-h-200 flex flex-col justify-center gap-16 lg:gap-0 max-w-7xl mx-auto animate-fade-in"
       >
-        <div className="relative flex flex-col md:flex-row items-center justify-center gap-0 md:gap-8 text-[120px] md:text-[160px] lg:text-[240px] leading-none lg:leading-normal">
+        <div className="relative flex flex-col md:flex-row items-center justify-center gap-0 md:gap-8 text-[120px] md:text-[160px] lg:text-[240px] leading-none lg:leading-normal animate-fade-in">
           <p className="font-londrina-outline ">THÀNH</p>
           <p className="font-londrina-solid">DUY</p>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
       </section>
       <section id="work" className="px-4 py-16 lg:px-16 max-w-7xl mx-auto">
-        <div className="relative pb-8 flex flex-col items-center">
+        <div className="relative pb-8 flex flex-col items-center ">
           <p className="text-4xl lg:text-[100px] text-foreground/10">
             {t("selectedWork")}
           </p>

@@ -55,7 +55,7 @@ export default function Header() {
         {isMenuOpen && (
           <div className="absolute top-full right-0 z-50 p-4 mt-4 flex flex-col items-center gap-4 bg-background/80 backdrop-blur-xl rounded-3xl border border-gray-200 shadow-2xl">
             <Link href="/#work">{t("work")}</Link>
-            <Link href="/#service">{t("service")}</Link>
+            <Link href="/service">{t("service")}</Link>
             <Button
               nativeButton={false}
               render={<Link href="/contact">{t("let'sTalk")}</Link>}
@@ -68,7 +68,7 @@ export default function Header() {
       <Link href="/#work" className="hidden lg:block">
         {t("work")}
       </Link>
-      <Link href="/#service" className="hidden lg:block">
+      <Link href="/service" className="hidden lg:block">
         {t("service")}
       </Link>
       <div className="border rounded-lg hidden lg:block">
