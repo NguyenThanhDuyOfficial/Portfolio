@@ -32,6 +32,10 @@
   },
 
   "Contact": {
+    "availableForNewProject": "Available for New Project",
+    "title": "HAVE A PROJECT IN MIND?",
+    "description": "Together, we can create something clear and impactful. Let's collaborate to bring our ideas to life in a way that reasonates with everyone.",
+    "contactMe": "Contact Me",
     "name": "Name",
     "namePlaceholder": "Your Name",
     "contactInfo": "Contact Info",

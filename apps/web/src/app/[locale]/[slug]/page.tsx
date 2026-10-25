@@ -41,14 +41,16 @@ export default function Product() {
           </div>
           <div className="space-y-4">
             <div className="flex gap-4">
-              <Button
-                nativeButton={false}
-                render={
-                  <Link href={product?.demoUrl ?? ""}>
-                    {t("livePreview")} <GoArrowUpRight />
-                  </Link>
-                }
-              />
+              {product?.demoUrl && (
+                <Button
+                  nativeButton={false}
+                  render={
+                    <Link href={product?.demoUrl}>
+                      {t("livePreview")} <GoArrowUpRight />
+                    </Link>
+                  }
+                />
+              )}
               <Button
                 nativeButton={false}
                 variant="secondary"

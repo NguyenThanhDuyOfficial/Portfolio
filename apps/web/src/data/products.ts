@@ -47,7 +47,7 @@ export const products: Product[] = [
   {
     slug: "joli",
     price: "3tr",
-    demoUrl: "joli-nguyenthanhhduyofficial.vercel.app",
+    demoUrl: "https://joli-nguyenthanhduyofficial.vercel.app",
     githubUrl: "https://github.com/NguyenThanhDuyOfficial/Joli",
     timeline: "01/2024 - 03/2024",
     tags: ["ecommerce"],

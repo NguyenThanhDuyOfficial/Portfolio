@@ -30,8 +30,11 @@
       "description": "Thiết kế UI/UX trên Penpot/Figma, hoặc chuyển thiết kế thành code."
     }
   },
-
   "Contact": {
+    "availableForNewProject": "Sẵn sàng nhận dự án mới",
+    "title": "BẠN ĐANG CÓ Ý TƯỞNG?",
+    "description": "Cùng nhau, chúng ta có thể tạo nên một sản phẩm rõ ràng và ấn tượng. Hãy hợp tác để biến ý tưởng thành hiện thực theo cách chạm đến mọi người.",
+    "contactMe": "Liên hệ ngay",
     "name": "Họ tên",
     "namePlaceholder": "Tên của bạn",
     "contactInfo": "Thông tin liên hệ",
@@ -48,7 +51,6 @@
     "MESSAGE_MIN": "Nội dung phải có ít nhất 10 ký tự.",
     "MESSAGE_MAX": "Nội dung không được vượt quá 5000 ký tự."
   },
-
   "Product": {
     "livePreview": "Xem trực tiếp",
     "contactMe": "Liên hệ",

@@ -2,18 +2,24 @@
 
 import { Badge } from "@nguyenthanhduyofficial/ui/components/badge";
 import { Button } from "@nguyenthanhduyofficial/ui/components/button";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
-import { usePathname } from "next/navigation";
 import { simpleNails } from "../fonts/fonts";
+import { Link, usePathname, useRouter } from "../i18n/navigation";
+
+const locales = [
+  { code: "en", label: "EN" },
+  { code: "vi", label: "VI" },
+];
 
 export default function Header() {
   const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
   const isHome = pathname === "/";
   return (
     <header className="fixed inset-0 z-50 w-full max-w-7xl mx-auto h-16 px-4 lg:mt-4 lg:px-16 flex justify-between items-center bg-background lg:rounded-2xl">
@@ -27,6 +33,17 @@ export default function Header() {
           Thành Duy
         </Link>
       )}
+      <div className="border rounded-lg lg:hidden">
+        {locales.map((l) => (
+          <Button
+            key={l.code}
+            onClick={() => router.replace(pathname, { locale: l.code })}
+            variant={l.code === locale ? "secondary" : "ghost"}
+          >
+            {l.label}
+          </Button>
+        ))}
+      </div>
       <div className="relative lg:hidden">
         <Button
           variant="outline"
@@ -47,13 +64,24 @@ export default function Header() {
         )}
       </div>
 
-      {/* MD responsive */}
+      {/* lg responsive */}
       <Link href="/#work" className="hidden lg:block">
         {t("work")}
       </Link>
       <Link href="/#service" className="hidden lg:block">
         {t("service")}
       </Link>
+      <div className="border rounded-lg hidden lg:block">
+        {locales.map((l) => (
+          <Button
+            key={l.code}
+            onClick={() => router.replace(pathname, { locale: l.code })}
+            variant={l.code === locale ? "secondary" : "ghost"}
+          >
+            {l.label}
+          </Button>
+        ))}
+      </div>
       <Button
         nativeButton={false}
         className="hidden lg:flex"
