@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "../../../components/ProductCard";
 import { SiGmail, SiGithub } from "react-icons/si";
-import { products } from "../../data/products";
-import ContactSection from "../../components/ContactSection";
+import { products } from "../../../data/products";
+import ContactSection from "../../../components/ContactSection";
 import { useTranslations } from "next-intl";
 
 export const services = [
