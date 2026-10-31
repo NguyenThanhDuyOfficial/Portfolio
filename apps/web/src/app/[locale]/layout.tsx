@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import "../globals.css";
+import "../../styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import Header from "../../components/Header";
 import {
   geistMono,
   geistSans,
@@ -27,10 +26,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} min-h-full flex flex-col bg-background text-foreground`}
       >
-        <NextIntlClientProvider>
-          <Header />
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

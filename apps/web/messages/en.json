@@ -1,4 +1,68 @@
 {
+  "CV": {
+    "name": "NGUYỄN THÀNH DUY",
+    "gmail": "nguyenthanhduyofficial@gmail.com",
+    "phone": "0823 564 241",
+    "location": "Ho Chi Minh City",
+    "github": "nguyenthanhduyofficial",
+    "portfolio": "nguyenthanhduyofficial",
+    "summary": {
+      "title": "SUMMARY",
+      "description": "{role} specializing in building website solutions, with 4+ websites delivered that meet UX, SEO, Core Web Vitals, WCAG, and Security standards. Seeking a {role} role to contribute to real projects and grow into a technical lead role over time."
+    },
+    "skills": {
+      "title": "SKILLS",
+      "frontend": {
+        "title": "Frontend",
+        "description": "Next.js, TypeSript, React"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Next.js"
+      },
+      "others": {
+        "title": "Others",
+        "description": "Penpot"
+      }
+    },
+    "projects": {
+      "title": "PROJECTS",
+      "joli": {
+        "title": "Joli",
+        "links": {
+          "github": "nguyenthanhduyofficial",
+          "live": "nguyenthanhduyofficial"
+        },
+        "bulletPoints": {
+          "1": "Built e-comerce platform using Next.js, Prisma, PostgreSQL to arhive ",
+          "2": "The goal was a cheap, fast-to-deploy and can be expanded later, so I used Next.js with Server Actions instead of a separate backend. Cheaper, faster to deploy, but tight coupling to the Next.js runtime.",
+          "3": "Shipped in 4 weeks with zero backend hosting cost, delivering full checkout, authentication flow, multi- language support, and a scalable architecture for future expansion."
+        }
+      },
+      "odyssey": {
+        "title": "Odyssey",
+        "links": {
+          "github": "nguyenthanhduyofficial",
+          "live": "nguyenthanhduyofficial"
+        },
+        "bulletPoints": {
+          "1": "Built a wiki and blog website to fix Discord's content management limits - posts can only be sorted by recency or date, with no flexible view options and no structured content management.",
+          "2": "Used MDX + Git (Fumadocs) for the wiki and a database for the blog to cut DB load, plus a NestJS monorepo for scalability — cost-efficient and well-organized, at the cost of higher initial setup."
+        }
+      },
+      "car": {
+        "title": "Car",
+        "links": {
+          "github": "nguyenthanhduyofficial",
+          "live": "nguyenthanhduyofficial"
+        },
+        "bulletPoints": {
+          "1": "Built a car rental platform with car browsing and filtering, date selection, and multi-method deposits/payments - replacing manual booking processes with a self-service rental flow.",
+          "2": "Used Zustand for client state, RTK for server state, and a monorepo with repository pattern for scalability — smoother UX and better code organization, at the cost of higher cognitive overhead."
+        }
+      }
+    }
+  },
   "Header": {
     "availableForNewProject": "Available for New Project",
     "work": "Work",

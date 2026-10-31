@@ -4,6 +4,7 @@ import {
   Geist_Mono,
   Londrina_Outline,
   Londrina_Solid,
+  Roboto,
 } from "next/font/google";
 
 export const geistSans = Geist({
@@ -29,7 +30,10 @@ export const londrinaSolid = Londrina_Solid({
   variable: "--font-londrina-solid",
   display: "swap",
 });
+
 export const simpleNails = localFont({
   src: "./SimplesnailsVer40-6Lpx.ttf",
   display: "swap",
 });
+
+export const roboto = Roboto({ display: "swap" });
