@@ -4,25 +4,25 @@
     "gmail": "nguyenthanhduyofficial@gmail.com",
     "phone": "0823 564 241",
     "location": "Ho Chi Minh City",
-    "github": "nguyenthanhduyofficial",
-    "portfolio": "nguyenthanhduyofficial",
+    "github": "https://github.com/nguyenthanhduyofficial",
+    "portfolio": "https://nguyenthanhduyofficial.vercel.app/",
     "summary": {
       "title": "SUMMARY",
-      "description": "{role} specializing in building website solutions, with 4+ websites delivered that meet UX, SEO, Core Web Vitals, WCAG, and Security standards. Seeking a {role} role to contribute to real projects and grow into a technical lead role over time."
+      "description": "<b>{role}</b> specializing in building website solutions, with <b>3+ websites delivered</b> that meet <b>UX</b>, <b>SEO</b>, <b>Core Web Vitals</b>, <b>WCAG</b>, and <b>Security</b> standards. Seeking a <b>{role}</b> role to contribute to <b>real projects</b> and grow into a <b>technical lead</b> role over time."
     },
     "skills": {
       "title": "SKILLS",
       "frontend": {
         "title": "Frontend",
-        "description": "Next.js, TypeSript, React"
+        "description": "Next.js, TypeScript, React, Tailwind CSS, Shadcn UI, HTML/CSS"
       },
       "backend": {
         "title": "Backend",
-        "description": "Next.js"
+        "description": "Next.js, NestJS, Node.js, REST API, PostgreSQL, Prisma, JavaScript"
       },
       "others": {
         "title": "Others",
-        "description": "Penpot"
+        "description": "Vitest, Git, Docker, CI/CD"
       }
     },
     "projects": {
@@ -30,35 +30,32 @@
       "joli": {
         "title": "Joli",
         "links": {
-          "github": "nguyenthanhduyofficial",
-          "live": "nguyenthanhduyofficial"
+          "github": "https://github.com/NguyenThanhDuyOfficial/Joli",
+          "live": "https://joli-nguyenthanhduyofficial.vercel.app/"
         },
         "bulletPoints": {
-          "1": "Built e-comerce platform using Next.js, Prisma, PostgreSQL to arhive ",
-          "2": "The goal was a cheap, fast-to-deploy and can be expanded later, so I used Next.js with Server Actions instead of a separate backend. Cheaper, faster to deploy, but tight coupling to the Next.js runtime.",
-          "3": "Shipped in 4 weeks with zero backend hosting cost, delivering full checkout, authentication flow, multi- language support, and a scalable architecture for future expansion."
+          "1": "Built <b>e-commerce</b> platform using <b>Next.js</b>, <b>Prisma</b>, <b>PostgreSQL</b> to achieve Lighthouse score <b>100/100</b> desktop, <b>88/100</b> mobile, <b>LCP 0.5s</b>, <b>CLS ~0</b>, <b>INP 8ms</b> - all passing",
+          "2": "Shipped in <b>4 weeks</b> with zero backend hosting cost, delivering <b>full shopping, checkout, cart, authentication flow</b>, <b>multi-language support</b>, and a scalable architecture for future expansion."
         }
       },
       "odyssey": {
         "title": "Odyssey",
         "links": {
-          "github": "nguyenthanhduyofficial",
-          "live": "nguyenthanhduyofficial"
+          "github": "https://github.com/NguyenThanhDuyOfficial/odyssey"
         },
         "bulletPoints": {
-          "1": "Built a wiki and blog website to fix Discord's content management limits - posts can only be sorted by recency or date, with no flexible view options and no structured content management.",
-          "2": "Used MDX + Git (Fumadocs) for the wiki and a database for the blog to cut DB load, plus a NestJS monorepo for scalability — cost-efficient and well-organized, at the cost of higher initial setup."
+          "1": "Built a <b>wiki and blog</b> website to fix Discord's content management limits - posts can only be sorted by recency or date, with no flexible view options and no structured content management.",
+          "2": "Used MDX + Git (Fumadocs) for the wiki and a database for the blog to <b>cut DB load</b>, plus a NestJS monorepo for<b> scalability</b> — <b>cost-efficient</b> and <b>well-organized</b>."
         }
       },
       "car": {
         "title": "Car",
         "links": {
-          "github": "nguyenthanhduyofficial",
-          "live": "nguyenthanhduyofficial"
+          "github": "https://github.com/NguyenThanhDuyOfficial/car"
         },
         "bulletPoints": {
-          "1": "Built a car rental platform with car browsing and filtering, date selection, and multi-method deposits/payments - replacing manual booking processes with a self-service rental flow.",
-          "2": "Used Zustand for client state, RTK for server state, and a monorepo with repository pattern for scalability — smoother UX and better code organization, at the cost of higher cognitive overhead."
+          "1": "Built a <b>car rental</b> platform with car browsing and filtering, date selection, and multi-method deposits/payments - replacing manual booking processes with a self-service rental flow.",
+          "2": "Used Zustand for client state, RTK for server state, and a monorepo with repository pattern for <b>scalability</b> — <b>smoother UX</b> and better code organization."
         }
       }
     }

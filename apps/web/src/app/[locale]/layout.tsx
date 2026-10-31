@@ -9,8 +9,15 @@ import {
 } from "../../fonts/fonts";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "",
+  title: "Thành Duy",
+  description: "Nguyễn Thành Duy's Portfolio",
+  openGraph: {
+    images: [
+      {
+        url: "/icon.jpg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

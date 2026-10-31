@@ -5,26 +5,33 @@ import { FaEarthAsia } from "react-icons/fa6";
 import "../../../styles/cv.css";
 import { roboto } from "@/src/fonts/fonts";
 
-const skills = ["frontend", "backend", "others"];
+const skills = ["frontend", "backend", "others"] as const;
 const projects = [
-  { key: "joli", bulletPoints: [1, 2, 3] },
-  { key: "odyssey", bulletPoints: [1, 2] },
-  { key: "car", bulletPoints: [1, 2] },
+  { key: "joli", bulletPoints: [1, 2], links: ["github", "live"] },
+  { key: "odyssey", bulletPoints: [1, 2], links: ["github"] },
+  { key: "car", bulletPoints: [1, 2], links: ["github"] },
 ];
 
 export default async function CV({
-  params,
+  searchParams,
 }: {
-  params: Promise<{
+  searchParams: Promise<{
     role: string | undefined;
-    techStacks: string | string[] | undefined;
+    frontend: string | undefined;
+    backend: string | undefined;
+    others: string | undefined;
   }>;
 }) {
-  const { role = "Full-stack Developer", techStacks = ["Next.js"] } =
-    await params;
+  const {
+    role = "Full-stack Developer",
+    frontend,
+    backend,
+    others,
+  } = await searchParams;
+  const skillsParams = { frontend, backend, others };
   const t = await getTranslations("CV");
   return (
-    <main className={`${roboto.className} space-y-2`}>
+    <main className={`${roboto.className} space-y-4`}>
       <section id="header" className="flex justify-between items-center">
         <div>
           <h1>NGUYỄN THÀNH DUY</h1>
@@ -51,50 +58,61 @@ export default async function CV({
       </section>
       <section>
         <h2 className="">{t("summary.title")}</h2>
-        <p className="">{t("summary.description", { role: role })}</p>
+        <p className="">
+          {t.rich("summary.description", {
+            role: role,
+            b: (chunks) => <b>{chunks}</b>,
+          })}
+        </p>
       </section>
       <section>
         <h2>{t("skills.title")}</h2>
-        {skills.map((skill) => (
-          <p key={skill}>
-            {t(`skills.${skill}.title`)}: {t(`skills.${skill}.description`)}
-          </p>
-        ))}
+        {skills.map((skill) => {
+          const value = skillsParams[skill];
+          return (
+            <p key={skill}>
+              <b>{t(`skills.${skill}.title`)}:</b>{" "}
+              {t(`skills.${skill}.description`)}
+              {value}
+            </p>
+          );
+        })}
       </section>
       <section>
         <h2>{t("projects.title")}</h2>
-        {projects.map((project) => (
-          <div key={project.key}>
-            <div className="flex items-center gap-2">
-              <h3>{t(`projects.${project.key}.title`)}</h3>
-              {t(`projects.${project.key}.links.live`) && (
-                <>
-                  <span>|</span>
-                  <div className="flex items-center gap-1">
-                    <FaGithub className="w-4 h-4 inline" />
-                    <a href={t(`projects.${project.key}.links.live`)}>Github</a>
+        <div className="space-y-2">
+          {projects.map((project) => (
+            <div key={project.key}>
+              <div className="flex items-center gap-2">
+                <h3>{t(`projects.${project.key}.title`)}</h3>
+                {project.links.map((link) => (
+                  <div key={link} className="flex gap-1">
+                    <span>|</span>
+                    <div className="flex items-center gap-1">
+                      {link === "github" ? (
+                        <FaGithub className="w-4 h-4 inline" />
+                      ) : (
+                        <FaEarthAsia className="w-4 h-4 inline" />
+                      )}
+                      <a href={t(`projects.${project.key}.links.${link}`)}>
+                        {link === "github" ? "Github" : "Live"}
+                      </a>
+                    </div>
                   </div>
-                </>
-              )}
-              {t(`projects.${project.key}.links.github`) && (
-                <>
-                  <span>|</span>
-                  <div className="flex items-center gap-1">
-                    <FaEarthAsia className="w-4 h-4 inline" />
-                    <a href={t(`projects.${project.key}.links.github`)}>Live</a>
-                  </div>
-                </>
-              )}
+                ))}
+              </div>
+              <ul>
+                {project.bulletPoints.map((key) => (
+                  <li key={key}>
+                    {t.rich(`projects.${project.key}.bulletPoints.${key}`, {
+                      b: (chunks) => <b>{chunks}</b>,
+                    })}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul>
-              {project.bulletPoints.map((key) => (
-                <li key={key}>
-                  {t(`projects.${project.key}.bulletPoints.${key}`)}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
     </main>
   );
