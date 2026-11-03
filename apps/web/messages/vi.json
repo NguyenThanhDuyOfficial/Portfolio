@@ -1,4 +1,65 @@
 {
+  "CV": {
+    "name": "NGUYỄN THÀNH DUY",
+    "gmail": "nguyenthanhduyofficial@gmail.com",
+    "phone": "0823 564 241",
+    "location": "Thành phố Hồ Chí Minh",
+    "github": "https://github.com/nguyenthanhduyofficial",
+    "portfolio": "https://nguyenthanhduyofficial.vercel.app/",
+    "summary": {
+      "title": "GIỚI THIỆU",
+      "description": "<b>{role}</b> chuyên xây dựng các giải pháp website, với <b>hơn 3+ website đã triển khai</b> đáp ứng các tiêu chuẩn <b>UX</b>, <b>SEO</b>, <b>Core Web Vitals</b>, <b>WCAG</b> và <b>Bảo mật</b>. Mong muốn tìm vai trò <b>{role}</b> để đóng góp cho <b>các dự án thực tế</b> và phát triển thành vai trò <b>trưởng nhóm kỹ thuật</b> theo thời gian."
+    },
+    "skills": {
+      "title": "KỸ NĂNG",
+      "frontend": {
+        "title": "Frontend",
+        "description": "Next.js, TypeScript, React.js, TailwindCSS, Shadcn UI, HTML5, CSS, JavaScript"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Next.js, NestJS, Node.js, REST API, PostgreSQL, Prisma"
+      },
+      "others": {
+        "title": "Khác",
+        "description": "Vitest, Git, Docker, CI/CD, Coding Conventions, Figma"
+      }
+    },
+    "projects": {
+      "title": "DỰ ÁN",
+      "joli": {
+        "title": "Joli",
+        "links": {
+          "github": "https://github.com/NguyenThanhDuyOfficial/Joli",
+          "live": "https://joli-nguyenthanhduyofficial.vercel.app/"
+        },
+        "bulletPoints": {
+          "1": "Xây dựng nền tảng <b>thương mại điện tử</b> bằng <b>Next.js</b>, <b>Prisma</b>, <b>PostgreSQL</b> để đạt điểm Lighthouse <b>100/100</b> trên desktop, <b>88/100</b> trên mobile, <b>LCP 0.5s</b>, <b>CLS ~0</b>, <b>INP 8ms</b> - tất cả đều đạt",
+          "2": "Bàn giao trong <b>4 tuần</b> với chi phí hosting backend bằng không, mang đến <b>toàn bộ luồng mua sắm, thanh toán, xác thực</b>, <b>hỗ trợ đa ngôn ngữ</b> và kiến trúc có thể mở rộng cho tương lai."
+        }
+      },
+      "odyssey": {
+        "title": "Odyssey",
+        "links": {
+          "github": "https://github.com/NguyenThanhDuyOfficial/odyssey"
+        },
+        "bulletPoints": {
+          "1": "Xây dựng trang web <b>wiki và blog</b> để khắc phục giới hạn quản lý nội dung của Discord - bài viết chỉ có thể sắp xếp theo độ mới hoặc ngày, không có tùy chọn xem linh hoạt và không có quản lý nội dung có cấu trúc.",
+          "2": "Sử dụng MDX + Git (Fumadocs) cho wiki và cơ sở dữ liệu cho blog để <b>giảm tải DB</b>, cùng với monorepo NestJS để đảm bảo <b>khả năng mở rộng</b> — <b>tiết kiệm chi phí</b> và <b>tổ chức tốt</b>."
+        }
+      },
+      "car": {
+        "title": "Car",
+        "links": {
+          "github": "https://github.com/NguyenThanhDuyOfficial/car"
+        },
+        "bulletPoints": {
+          "1": "Xây dựng nền tảng <b>cho thuê xe</b> với tính năng duyệt và lọc xe, chọn ngày, và đặt cọc/thanh toán đa phương thức - thay thế quy trình đặt xe thủ công bằng luồng thuê xe tự phục vụ.",
+          "2": "Sử dụng Zustand cho state phía client, RTK cho state phía server, và monorepo với repository pattern để đảm bảo <b>khả năng mở rộng</b> — <b>UX mượt hơn</b> và tổ chức code tốt hơn."
+        }
+      }
+    }
+  },
   "Header": {
     "availableForNewProject": "Sẵn sàng nhận dự án mới",
     "work": "Dự án",

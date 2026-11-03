@@ -14,15 +14,15 @@
       "title": "SKILLS",
       "frontend": {
         "title": "Frontend",
-        "description": "Next.js, TypeScript, React, Tailwind CSS, Shadcn UI, HTML/CSS"
+        "description": "Next.js, TypeScript, React.js, TailwindCSS, Shadcn UI, HTML5, CSS, JavaScript"
       },
       "backend": {
         "title": "Backend",
-        "description": "Next.js, NestJS, Node.js, REST API, PostgreSQL, Prisma, JavaScript"
+        "description": "Next.js, NestJS, Node.js, REST API, PostgreSQL, Prisma"
       },
       "others": {
         "title": "Others",
-        "description": "Vitest, Git, Docker, CI/CD"
+        "description": "Vitest, Git, Docker, CI/CD, Coding Conventions, Figma"
       }
     },
     "projects": {
@@ -35,7 +35,7 @@
         },
         "bulletPoints": {
           "1": "Built <b>e-commerce</b> platform using <b>Next.js</b>, <b>Prisma</b>, <b>PostgreSQL</b> to achieve Lighthouse score <b>100/100</b> desktop, <b>88/100</b> mobile, <b>LCP 0.5s</b>, <b>CLS ~0</b>, <b>INP 8ms</b> - all passing",
-          "2": "Shipped in <b>4 weeks</b> with zero backend hosting cost, delivering <b>full shopping, checkout, cart, authentication flow</b>, <b>multi-language support</b>, and a scalable architecture for future expansion."
+          "2": "Shipped in <b>4 weeks</b> with zero backend hosting cost, delivering <b>full shopping, checkout, authentication flow</b>, <b>multi-language support</b>, and a scalable architecture for future expansion."
         }
       },
       "odyssey": {
