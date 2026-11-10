@@ -6,6 +6,7 @@ allowBuilds:
   '@prisma/engines': true
   '@swc/core': true
   esbuild: false
+  lefthook: true
   prisma: true
   unrs-resolver: true
   workerd: true

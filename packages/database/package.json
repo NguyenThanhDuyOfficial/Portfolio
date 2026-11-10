@@ -8,7 +8,8 @@
   },
   "main": "./prisma/prisma.ts",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "biome lint",
+    "format": "biome format --write",
     "typecheck": "tsc --noEmit",
     "generate": "pnpm prisma generate",
     "seed": "dotenv run -f .env.local -- pnpm dlx tsx prisma/seed.ts",

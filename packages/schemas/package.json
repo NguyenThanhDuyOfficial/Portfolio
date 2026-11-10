@@ -31,8 +31,9 @@
     "url": "https://github.com/NguyenThanhDuyOfficial/template"
   },
   "scripts": {
-    "lint": "eslint .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "lint": "biome lint",
+    "format": "biome format --write"
   },
   "dependencies": {
     "@nguyenthanhduyofficial/typescript-config": "workspace:*",

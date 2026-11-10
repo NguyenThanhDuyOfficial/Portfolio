@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoIosPricetags } from "react-icons/io";
-import { Product } from "../data/products";
+import { Product, ProductOutput } from "../data/products";
 import { useTranslations } from "next-intl";
 
 export default function ProductCard({
   product,
   className = "",
 }: {
-  product: Product;
+  product: ProductOutput;
   className?: string;
 }) {
   const t = useTranslations("Product");
@@ -19,7 +19,7 @@ export default function ProductCard({
       <div className="relative w-full aspect-video group">
         <Link href={product.slug} className="absolute inset-0">
           <Image
-            src={product.images[0]!}
+            src={product.images![0]!.imageUrl}
             alt="Product's Image"
             fill
             sizes="(max-width: 480px) 100vw, 480px"
@@ -39,7 +39,7 @@ export default function ProductCard({
                 variant="secondary"
                 className="md:p-4 md:text-lg"
               >
-                {t(`tags.${tag}`)}
+                {tag.name}
               </Badge>
             ))}
           </div>

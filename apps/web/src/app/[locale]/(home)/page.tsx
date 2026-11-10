@@ -5,9 +5,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 import ProductCard from "../../../components/ProductCard";
 import { SiGmail, SiGithub } from "react-icons/si";
-import { products } from "../../../data/products";
 import ContactSection from "../../../components/ContactSection";
-import { useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getProductsBySlugs } from "@/src/data/products";
 
 export const services = [
   { key: "landing", url: "/service" },
@@ -16,8 +16,10 @@ export const services = [
   { key: "design", url: "/service" },
 ];
 
-export default function Home() {
-  const t = useTranslations("Home");
+export default async function Home() {
+  const t = await getTranslations("Home");
+  const locale = await getLocale();
+  const products = getProductsBySlugs(["joli", "odyssey"], locale);
   return (
     <main className="w-full">
       <section
@@ -110,8 +112,8 @@ export default function Home() {
             </Button>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 gap-x-24">
-            {products.map((product, index) => (
-              <ProductCard key={index} product={product} />
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>

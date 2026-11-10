@@ -58,6 +58,13 @@
           "2": "Sử dụng Zustand cho state phía client, RTK cho state phía server, và monorepo với repository pattern để đảm bảo <b>khả năng mở rộng</b> — <b>UX mượt hơn</b> và tổ chức code tốt hơn."
         }
       }
+    },
+    "guide": {
+      "title": "Sách, Kênh và Tài liệu",
+      "book": "Sách",
+      "youtube": "Youtube",
+      "document": "Tài liệu",
+      "learn": "Cách học"
     }
   },
   "Header": {

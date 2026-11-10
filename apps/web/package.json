@@ -7,9 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
+    "lint": "biome lint",
+    "format": "biome format --write",
     "test": "dotenv -e ../../packages/database/.env.test -- vitest run",
     "test:watch": "dotenv -e ../../packages/database/.env.test -- vitest",
     "test:coverage": "dotenv -e ../../packages/database/.env.test -- vitest run --coverage"

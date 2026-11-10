@@ -30,8 +30,8 @@
       "joli": {
         "title": "Joli",
         "links": {
-          "github": "https://github.com/NguyenThanhDuyOfficial/Joli",
-          "live": "https://joli-nguyenthanhduyofficial.vercel.app/"
+          "github": "github.com/NguyenThanhDuyOfficial/Joli",
+          "live": "joli-nguyenthanhduyofficial.vercel.app"
         },
         "bulletPoints": {
           "1": "Built <b>e-commerce</b> platform using <b>Next.js</b>, <b>Prisma</b>, <b>PostgreSQL</b> to achieve Lighthouse score <b>100/100</b> desktop, <b>88/100</b> mobile, <b>LCP 0.5s</b>, <b>CLS ~0</b>, <b>INP 8ms</b> - all passing",
@@ -41,7 +41,8 @@
       "odyssey": {
         "title": "Odyssey",
         "links": {
-          "github": "https://github.com/NguyenThanhDuyOfficial/odyssey"
+          "github": "github.com/NguyenThanhDuyOfficial/odyssey",
+          "live": "odyssey-group.vercel.app"
         },
         "bulletPoints": {
           "1": "Built a <b>wiki and blog</b> website to fix Discord's content management limits - posts can only be sorted by recency or date, with no flexible view options and no structured content management.",
@@ -51,7 +52,7 @@
       "car": {
         "title": "Car",
         "links": {
-          "github": "https://github.com/NguyenThanhDuyOfficial/car"
+          "github": "github.com/NguyenThanhDuyOfficial/car"
         },
         "bulletPoints": {
           "1": "Built a <b>car rental</b> platform with car browsing and filtering, date selection, and multi-method deposits/payments - replacing manual booking processes with a self-service rental flow.",
